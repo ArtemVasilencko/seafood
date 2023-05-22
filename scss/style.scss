@@ -3,7 +3,13 @@ $color: #001E64;
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
+
+button{
+  cursor: pointer;
+}
+
 
 .container {
   max-width: 1220px;
@@ -130,9 +136,6 @@ a {
 
 .slick-arrow {
   position: absolute;
-  left: 0;
-  text-align: center;
-  display: block;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -183,13 +186,29 @@ a {
 
 .product {
   padding-top: 100px;
-  
+  color: #232222;
+  font-family: $font;
   &__inner {
     display: flex;
     justify-content: space-between;
+  width: 1200px;  }
+
+  &__name{
+    padding: 41px 0 0 88px ;
+    width: 422px;
+    height: 440px;
+   &-item{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+   }
   }
+
   &__content-box{
     display: flex;
+    margin-bottom: 5px;
   }
 
   &__content-item{
@@ -204,7 +223,84 @@ a {
     }
   }
 
+  &__content-image{
+    margin-right: 40px;
+    width: 260px;
+    height: 215px;
+  }
+  
+  &__content-title{
+    color: #001E64;
+    font-size: 24px;
+    font-family: $font;
+    margin-bottom: 20px;
+  }
+
   &__content-text{
     width: 600px;
+    font-size: 16px;
+    margin-bottom: 27px;  
+  }
+
+  &__content-btn{
+    font-size: 24px;
+    font-family: $font;
+    color: #001E64;
+    border: 1px solid #001E64;
+    border-radius: 20px;
+    padding: 12px 85px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: transparent;
+  }
+  
+}
+
+
+.product__name .slick-current{
+  font-weight: 700;
+  font-size: 36px;
+  color: #001E64;
+}
+
+.product__name .slick-arrow{
+  padding-left: 210px;
+}
+ 
+
+.product__content .slick-slide {
+  position: absolute !important;
+}
+
+.product__content .slick-slide.slick-active {
+  position: relative !important;
+  left: 0 !important;
+}
+
+.seafood-box{
+  background-image: url(../img/seafood-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    padding: 290px 0 95px;
+    color: #ffffff;
+  }
+  &__item{
+    background-image: url(../img/shell.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 165px;
+    font-family: $font;
+    font-weight: 700; 
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

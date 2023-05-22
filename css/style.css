@@ -1,5 +1,10 @@
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -112,9 +117,6 @@ a {
 
 .slick-arrow {
   position: absolute;
-  left: 0;
-  text-align: center;
-  display: block;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -163,13 +165,29 @@ a {
 
 .product {
   padding-top: 100px;
+  color: #232222;
+  font-family: "Roboto Slab", serif;
 }
 .product__inner {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+}
+.product__name {
+  padding: 41px 0 0 88px;
+  width: 422px;
+  height: 440px;
+}
+.product__name-item {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  cursor: pointer;
 }
 .product__content-box {
   display: flex;
+  margin-bottom: 5px;
 }
 .product__content-item {
   display: flex;
@@ -182,6 +200,77 @@ a {
 .product__content-item:not(:last-child) {
   margin-bottom: 30px;
 }
+.product__content-image {
+  margin-right: 40px;
+  width: 260px;
+  height: 215px;
+}
+.product__content-title {
+  color: #001E64;
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 20px;
+}
 .product__content-text {
   width: 600px;
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+.product__content-btn {
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  color: #001E64;
+  border: 1px solid #001E64;
+  border-radius: 20px;
+  padding: 12px 85px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.product__name .slick-current {
+  font-weight: 700;
+  font-size: 36px;
+  color: #001E64;
+}
+
+.product__name .slick-arrow {
+  padding-left: 210px;
+}
+
+.product__content .slick-slide {
+  position: absolute !important;
+}
+
+.product__content .slick-slide.slick-active {
+  position: relative !important;
+  left: 0 !important;
+}
+
+.seafood-box {
+  background-image: url(../img/seafood-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.seafood-box__items {
+  display: flex;
+  justify-content: space-around;
+  padding: 290px 0 95px;
+  color: #ffffff;
+}
+.seafood-box__item {
+  background-image: url(../img/shell.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 165px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

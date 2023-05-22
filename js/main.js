@@ -1,12 +1,12 @@
 $(function () {
 
-  // $('.header-slider').slick({
-  //   vertical: true,
-  //   dots: true,
-  //   verticalSwiping: true,
-  //   prevArrow: '<button type="button" class="slick-prev" alt="" > <img src="img/prev-arrow.svg"</button>',
-  //   nextArrow: '<button type="button" class="slick-next"  alt="" ><img src="img/next-arrow.svg"</button>'
-  // });
+  $('.header-slider').slick({
+    vertical: true,
+    dots: true,
+    verticalSwiping: true,
+    prevArrow: '<button type="button" class="slick-prev" alt="" > <img src="img/prev-arrow.svg"</button>',
+    nextArrow: '<button type="button" class="slick-next"  alt="" ><img src="img/next-arrow.svg"</button>'
+  });
 
   $('.product__name').slick({
     slidesToShow: 6,
@@ -15,6 +15,8 @@ $(function () {
     focusOnSelect: true,
     vertical: true,
     verticalSwiping: true,
+    prevArrow: '<button type="button" class="slick-prev" alt="" > <img src="img/prev-arrow-product.png"</button>',
+    nextArrow: '<button type="button" class="slick-next"  alt="" ><img src="img/next-arrow-product.png"</button>'
   })
   $('.product__content').slick({
     asNavFor: '.product__name',
@@ -22,7 +24,8 @@ $(function () {
     vertical: true,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
+    fade: true
   })
+
 
 });
