@@ -10,6 +10,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   position: relative;
+  color: #232222;
 }
 
 .header__top {
@@ -158,4 +159,29 @@ a {
 }
 .header__content-box a:hover {
   font-weight: 700;
+}
+
+.product {
+  padding-top: 100px;
+}
+.product__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.product__content-box {
+  display: flex;
+}
+.product__content-item {
+  display: flex;
+  flex-direction: column;
+}
+.product__content-item span {
+  margin-bottom: 10px;
+  color: #001E64;
+}
+.product__content-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.product__content-text {
+  width: 600px;
 }/*# sourceMappingURL=style.css.map */
