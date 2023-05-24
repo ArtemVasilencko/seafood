@@ -6,7 +6,7 @@ a {
   cursor: pointer;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -188,61 +188,66 @@ button{
   padding-top: 100px;
   color: #232222;
   font-family: $font;
+
   &__inner {
     display: flex;
     justify-content: space-between;
-  width: 1200px;  }
-
-  &__name{
-    padding: 41px 0 0 88px ;
-    width: 422px;
-    height: 440px;
-   &-item{
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 32px;
-    cursor: pointer;
-   }
+    width: 1200px;
   }
 
-  &__content-box{
+  &__name {
+    padding: 41px 0 0 88px;
+    width: 422px;
+    height: 440px;
+
+    &-item {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 24px;
+      line-height: 32px;
+      cursor: pointer;
+    }
+  }
+
+  &__content-box {
     display: flex;
     margin-bottom: 5px;
   }
 
-  &__content-item{
+  &__content-item {
     display: flex;
     flex-direction: column;
-    & span{
+
+    & span {
       margin-bottom: 10px;
       color: #001E64;
     }
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  &__content-image{
+  &__content-image {
     margin-right: 40px;
     width: 260px;
     height: 215px;
   }
-  
-  &__content-title{
+
+  &__content-title {
     color: #001E64;
     font-size: 24px;
     font-family: $font;
     margin-bottom: 20px;
   }
 
-  &__content-text{
+  &__content-text {
     width: 600px;
     font-size: 16px;
-    margin-bottom: 27px;  
+    margin-bottom: 27px;
   }
 
-  &__content-btn{
+  &__content-btn {
     font-size: 24px;
     font-family: $font;
     color: #001E64;
@@ -253,20 +258,20 @@ button{
     font-weight: 700;
     background-color: transparent;
   }
-  
+
 }
 
 
-.product__name .slick-current{
+.product__name .slick-current {
   font-weight: 700;
   font-size: 36px;
   color: #001E64;
 }
 
-.product__name .slick-arrow{
+.product__name .slick-arrow {
   padding-left: 210px;
 }
- 
+
 
 .product__content .slick-slide {
   position: absolute !important;
@@ -277,18 +282,20 @@ button{
   left: 0 !important;
 }
 
-.seafood-box{
+.seafood-box {
   background-image: url(../img/seafood-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  &__items{
+
+  &__items {
     display: flex;
     justify-content: space-around;
     padding: 290px 0 95px;
     color: #ffffff;
   }
-  &__item{
+
+  &__item {
     background-image: url(../img/shell.png);
     background-position: center;
     background-size: cover;
@@ -296,11 +303,68 @@ button{
     width: 180px;
     height: 165px;
     font-family: $font;
-    font-weight: 700; 
+    font-weight: 700;
     line-height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+
+.seafood {
+  padding: 100px 0;
+
+  &__items {
+    margin-bottom: 100px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    max-height: 597px;
+    &-1{
+      max-height: 510px;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 30px;
+    font-size: 24px ;
+    font-family: $font;
+    color: #001E64;
+    max-width: 490px;
+    font-weight: 400;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 420px;
+    &:last-child{
+      margin-bottom: 50px;
+    }
+    &-right{
+      max-height: 213px;
+    }
+    &-right .seafood__item-content{
+      margin-right: 180px;
+    }
+    &-fix{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.seafood__blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+
+  &-text {
+    max-width: 530px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: $font;
   }
 }

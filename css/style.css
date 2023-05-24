@@ -273,4 +273,56 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.seafood {
+  padding: 100px 0;
+}
+.seafood__items {
+  margin-bottom: 100px;
+}
+.seafood__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  max-height: 597px;
+}
+.seafood__item-1 {
+  max-height: 510px;
+}
+.seafood__item-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  color: #001E64;
+  max-width: 490px;
+  font-weight: 400;
+}
+.seafood__item-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+.seafood__item-text:last-child {
+  margin-bottom: 50px;
+}
+.seafood__item-text-right {
+  max-height: 213px;
+}
+.seafood__item-text-right .seafood__item-content {
+  margin-right: 180px;
+}
+.seafood__item-text-fix {
+  margin-bottom: 50px;
+}
+
+.seafood__blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.seafood__blockquote-text {
+  max-width: 530px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
 }/*# sourceMappingURL=style.css.map */
